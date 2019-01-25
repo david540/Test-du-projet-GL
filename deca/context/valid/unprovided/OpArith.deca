@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant les opérations arithmétiques
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+  int x;
+  int y;
+
+  float a;
+  float b;
+
+  x = x + y;
+  y = y - x;
+  a = a*b;
+  b = b/a;
+  x = x/y;
+  x = x%y;
+}

@@ -1,0 +1,7 @@
+class OtherObject{
+
+}
+
+class A extends NonExistantObject{
+
+}

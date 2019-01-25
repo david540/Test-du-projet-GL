@@ -1,0 +1,15 @@
+// Description:
+//    classe sans }
+//
+// Resultats:
+//    Ligne 14 : Erreur de syntaxe.
+//    test_lex ne doit pas donner d'erreur.
+//
+// Historique:
+//    cree le 18/01/2019
+
+class maClasse {
+  int x;
+
+{
+}

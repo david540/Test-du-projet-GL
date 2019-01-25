@@ -1,0 +1,42 @@
+class A{
+    int x, y;
+    int getX(){
+        return x;
+    }
+    int getY(){
+        return this.y;
+    }
+    int double(int m){
+        return m * 2;
+    }
+    int triple(int m){
+        return m * 3;
+    }
+    int x6(int m){
+        return triple(m) * double(m);
+    }
+    void setX(int m){
+        this.x = m;
+    }
+    void setY(int m){
+        this.y = m;
+    }
+}
+
+{
+    A obj = new A();
+    A obj2 = new A();
+    println("x= ", obj.getX(), " ; y= ", obj.getY(), "   | ", "x= ", obj2.getX(), " ; y= ", obj2.getY());
+    obj.setX(1);
+    obj2.setY(1);
+    println("x= ", obj.getX(), " ; y= ", obj.getY(), "   | ", "x= ", obj2.getX(), " ; y= ", obj2.getY());
+    obj.setX(obj.double(obj.getX()));
+    obj2.setY(obj2.double(obj2.getY()));
+    println("x= ", obj.getX(), " ; y= ", obj.getY(), "   | ", "x= ", obj2.getX(), " ; y= ", obj2.getY());
+    obj.setY(obj.triple(obj.getX()));
+    obj2.setX(obj2.triple(obj2.getY()));
+    println("x= ", obj.getX(), " ; y= ", obj.getY(), "   | ", "x= ", obj2.getX(), " ; y= ", obj2.getY());
+    obj.setX(obj.x6(obj.getY()));
+    obj2.setY(obj2.x6(obj2.getX()));
+    println("x= ", obj.getX(), " ; y= ", obj.getY(), "   | ", "x= ", obj2.getX(), " ; y= ", obj2.getY());
+}

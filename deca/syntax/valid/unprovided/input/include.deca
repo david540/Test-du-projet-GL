@@ -1,0 +1,4 @@
+{
+      #include "testInclude.txt"
+      println("y = ", y);
+}

@@ -1,0 +1,22 @@
+// Description:
+//    Programme simple avec champ et méthode d'une classe dans une autre classe
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    C c;
+}
+
+class B {
+    void m(C c) {
+
+    }
+}
+
+class C {
+
+}

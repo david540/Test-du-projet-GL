@@ -1,0 +1,8 @@
+{
+    println(2.0);
+    print(2.0);
+    println();
+    printx(2.0);
+    println();
+    printlnx(2.0);
+}

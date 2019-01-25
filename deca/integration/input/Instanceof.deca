@@ -1,0 +1,36 @@
+class CustomObject{
+    void function(){
+        if(this instanceof CustomObject){
+            ((CustomObject)(this)).functionFils();
+
+            if(this instanceof SonSonObject){
+                ((SonSonObject)(this)).functionFilsFils();
+            }
+        }else{
+            println(0);
+        }
+    }
+}
+class SonObject extends CustomObject{
+    void functionFils(){
+        if(this instanceof SonSonObject){
+
+        }else{
+            println(1);
+        }
+    }
+}
+class SonSonObject extends SonObject{
+    void functionFilsFils(){
+        println(2);
+    }
+}
+
+
+
+{
+    SonObject so = new SonObject();
+    Object s = new SonSonObject();
+    so.function();
+    ((SonSonObject)(s)).function();
+}

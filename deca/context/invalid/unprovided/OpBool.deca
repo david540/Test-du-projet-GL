@@ -1,0 +1,16 @@
+// Description:
+//    Opérateurs booléens
+//
+// Resultats:
+//    Ligne 15: Un des opérateurs n'est pas un booléen
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a;
+   boolean b;
+
+   // Doit etre refuse.
+   b = a && b;
+}

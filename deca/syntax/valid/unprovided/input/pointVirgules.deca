@@ -1,0 +1,13 @@
+// Description:
+//    liste d'instructions avec pleins de ;;
+//
+// Resultats:
+//    Pleins de points virgules
+//
+// Historique:
+//    cree le 18/01/2019
+{
+  ;;;;
+  ;;;x;a;;;
+  println("Pleins de points virgules");;;;;;
+}

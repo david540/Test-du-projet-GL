@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme lexicalement incorrect.
+//
+// Resultats:
+//    test_lex ne doit pas reonnaitre & (ligne 15)
+//
+// Historique:
+//    cree le 18/01/2019
+
+{
+    int x = ();
+}

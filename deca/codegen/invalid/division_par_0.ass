@@ -1,0 +1,65 @@
+; start main program
+; Method Table for Object:
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Main program
+; 	Variables declaration:
+; 	  (allocate R2)
+	LOAD #0x1.63d70ap2, R2
+	STORE R2, 3(GB)
+; 	  (free R2)
+; 	  (allocate R2)
+	LOAD #0, R2
+	STORE R2, 4(GB)
+; 	  (free R2)
+; 	Beginning of main instructions:
+; 	  (allocate R2)
+	LOAD 3(GB), R2
+; 	  (allocate R3)
+	LOAD 4(GB), R3
+	FLOAT 4(GB), R3
+	DIV R3, R2
+; 	  (free R3)
+	BOV error_arithmetic_overflow
+	LOAD R2, R1
+; 	  (free R2)
+	WFLOAT
+	WNL
+	HALT
+; Error handling:
+error_div_by_0:
+	WSTR "FATAL ERROR: division by 0"
+	ERROR
+error_arithmetic_overflow:
+	WSTR "FATAL ERROR: arithmetic overflow or division by 0.0"
+	ERROR
+error_no_return:
+	WSTR "FATAL ERROR: no return in method"
+	ERROR
+error_cast:
+	WSTR "FATAL ERROR: cannot cast"
+	ERROR
+error_null_deref:
+	WSTR "FATAL ERROR: null dereferencement"
+	ERROR
+error_invalid_entry:
+	WSTR "FATAL ERROR: entry invalid"
+	ERROR
+error_stack_overflow:
+	WSTR "FATAL ERROR: stack overflow"
+	ERROR
+; Methods for Object:
+code.Object.equals:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+	WSTR "TODO Object.equals"
+	WNL
+	RTS
+init.Object:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; end main program

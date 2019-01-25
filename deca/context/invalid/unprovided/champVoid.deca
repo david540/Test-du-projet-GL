@@ -1,0 +1,12 @@
+// Description:
+//    Programme simple avec champ void
+//
+// Resultats:
+//    Programme incorrect ligne 11 : un champ ne peut pas être de type void
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    void v;
+}

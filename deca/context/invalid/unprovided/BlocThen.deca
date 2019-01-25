@@ -1,0 +1,18 @@
+// Description:
+//    Programme simple IfThenElse
+//
+// Resultats:
+//    Ligne 15: Instruction du bloc Then fausse.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a;
+   if (true) {
+      a = true;
+   }
+   else {
+      a = 3;
+   }
+}

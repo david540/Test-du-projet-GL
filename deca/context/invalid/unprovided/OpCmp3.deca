@@ -1,0 +1,15 @@
+// Description:
+//    Opérateurs de comparaison d'inégalité
+//
+// Resultats:
+//    Ligne 14: Comparaison entre un int et un boolean impossible.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a = 10;
+   boolean b = true;
+
+   b = false <= b;
+}

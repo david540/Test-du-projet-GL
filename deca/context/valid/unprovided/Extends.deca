@@ -1,0 +1,16 @@
+// Description:
+//    Programme simple avec héritage
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+
+}
+
+class B extends A {
+
+}

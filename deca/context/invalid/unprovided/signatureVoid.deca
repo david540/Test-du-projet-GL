@@ -1,0 +1,14 @@
+// Description:
+//    Programme simple avec void en paramètre de méthode
+//
+// Resultats:
+//    Programme incorrect ligne 11 : void ne peut pas être dans une signature
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    void m(void v) {
+
+    }
+}

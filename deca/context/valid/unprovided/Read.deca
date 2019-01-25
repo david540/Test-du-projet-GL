@@ -1,0 +1,15 @@
+// Description:
+//    Programme testant les lectures de int et float
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+  int x;
+  float y;
+
+  x = readInt();
+
+  y = readFloat();
+}

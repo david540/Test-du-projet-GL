@@ -1,0 +1,17 @@
+// Description:
+//    double main
+//
+// Resultats:
+//    Ligne 15 : Erreur de syntaxe.
+//    test_lex ne doit pas donner d'erreur.
+//
+// Historique:
+//    cree le 18/01/2019
+
+{
+  int x = 5 * 5;
+}
+
+{
+  println("Double main");
+}

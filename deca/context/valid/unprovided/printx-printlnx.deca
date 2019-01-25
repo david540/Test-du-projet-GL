@@ -1,0 +1,13 @@
+// Description:
+//    printx et printlnx
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 18/01/2019
+
+{
+   printlnx("Hello world !", 2);
+   printx(3);
+}

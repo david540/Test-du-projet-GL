@@ -1,0 +1,13 @@
+// Description:
+//    Programme testant les opérations unaires (moins, not, et conversion int-float)
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+  float x;
+  boolean vrai = !false;
+  x = -2.2;
+  x = 5;
+}

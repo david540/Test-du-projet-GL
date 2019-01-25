@@ -1,0 +1,20 @@
+// Description:
+//    Programme simple différentes méthodes
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+  int x;
+
+  void setX(int x) {
+      this.x = x;
+  }
+
+  int getX() {
+      return this.x;
+  }
+}

@@ -1,0 +1,12 @@
+// Description:
+//    déclarer une variable avec un type void
+//
+// Resultats:
+//    Ligne 11 : Message d'erreur car type void.
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   void v;
+}

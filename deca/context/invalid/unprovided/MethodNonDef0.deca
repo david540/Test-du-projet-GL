@@ -1,0 +1,19 @@
+// Description:
+//    Programme simple avec classe non définie dans la signature d'une méthode
+//
+// Resultats:
+//    Programme incorrect ligne 11 : classe B non définie
+//
+// Historique:
+//    cree le 21/01/2019
+
+class B{
+    void functionAvecTroisArguments(int a, float b, boolean c){ }
+}
+class A extends B{
+    void function(){this.functionAvecTroisArguments(1, 1, 1);}
+}
+{
+    A a = new A();
+    a.functionAvecTroisArguments(1, 1, 1==1);
+}

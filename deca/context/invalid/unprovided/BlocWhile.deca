@@ -1,0 +1,15 @@
+// Description:
+//    Programme simple While
+//
+// Resultats:
+//    Ligne 16: Instruction du bloc while fausse.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a;
+   while (true) {
+      a = true;
+   }
+}

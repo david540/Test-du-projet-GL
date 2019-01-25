@@ -1,0 +1,35 @@
+class OtherObject{
+
+}
+
+class CustomObject{
+    void dire_coucou(){ }
+    int dire_coucou1(){ return 2; }
+    boolean dire_coucou2(){ return true; }
+    float dire_coucou3(){ return 1.5; }
+    Object dire_coucou4(){ return new Object(); }
+    OtherObject dire_coucou5(){ return new OtherObject(); }
+    void dire_coucou6(){ }
+    int dire_coucou7(){ return 2; }
+    boolean dire_coucou8(){ return true; }
+    float dire_coucou9(){ return 1.5; }
+    Object dire_coucou10(){ return new Object(); }
+    OtherObject dire_coucou11(){ return new OtherObject(); }
+}
+
+{
+    CustomObject co;
+    co.dire_coucou();
+    co.dire_coucou1();
+    co.dire_coucou2();
+    co.dire_coucou3();
+    co.dire_coucou4();
+    co.dire_coucou5();
+    co.dire_coucou6();
+    co.dire_coucou7();
+    co.dire_coucou8();
+    co.dire_coucou9();
+    co.dire_coucou10();
+    co.dire_coucou11();
+
+}

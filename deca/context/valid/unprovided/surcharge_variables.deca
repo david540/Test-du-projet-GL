@@ -1,0 +1,27 @@
+class OtherObject{}
+
+class CustomObject{
+    protected int a = 1;
+    protected float b = 1;
+    protected boolean c = true;
+    protected Object d = new Object();
+    protected OtherObject e = new OtherObject();
+    int a2 = 1;
+    float b2 = 1;
+    boolean c2 = true;
+    Object d2 = new Object();
+    OtherObject e2 = new OtherObject();
+}
+
+class SonObject extends CustomObject{
+    protected int a = 2;
+    protected float b = 2;
+    protected boolean c = false;
+    protected Object d = new Object();
+    protected OtherObject e = new OtherObject();
+    int a2 = 2;
+    float b2 = 2;
+    boolean c2 = false;
+    Object d2 = new Object();
+    OtherObject e2 = new OtherObject();
+}

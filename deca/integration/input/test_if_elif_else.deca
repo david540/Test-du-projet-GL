@@ -1,0 +1,13 @@
+{
+        boolean b = true;
+        boolean a = false;
+        if(true && false){
+
+        }else if (a || !b || a){
+            println("ah non");
+        }else if(!false && true && b){
+            println("oui");
+        }else{
+
+        }
+}

@@ -1,0 +1,14 @@
+// Description:
+//    Tester l'égalité entre int et float
+//
+// Resultats:
+//    Le programme est correct
+//
+// Historique:
+//    cree le 17/01/2019
+
+{
+   int a = 1;
+   float b = 1.0;
+   boolean c = a == b;
+}

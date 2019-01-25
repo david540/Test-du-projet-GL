@@ -1,0 +1,19 @@
+class A{
+  void c(){
+    println("c");
+  }
+  void b(){
+    println("b");
+    c();
+  }
+  void a(){
+    println("a");
+    b();
+  }
+
+}
+
+{
+  A obj = new A();
+  obj.a();
+}

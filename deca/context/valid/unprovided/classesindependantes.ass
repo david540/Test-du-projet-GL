@@ -1,0 +1,101 @@
+; start main program
+; Method Table for Object:
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Method Table for A:
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.A.method, R0
+	STORE R0, 5(GB)
+; Method Table for C:
+	LEA 3(GB), R0
+	STORE R0, 6(GB)
+	LOAD code.A.equals, R0
+	STORE R0, 7(GB)
+	LOAD code.A.method, R0
+	STORE R0, 8(GB)
+	LOAD code.C.methodeC, R0
+	STORE R0, 9(GB)
+; Main program
+	HALT
+; Error handling:
+error_div_by_0:
+	WSTR "FATAL ERROR: division by 0"
+	ERROR
+error_arithmetic_overflow:
+	WSTR "FATAL ERROR: arithmetic overflow or division by 0.0"
+	ERROR
+error_no_return:
+	WSTR "FATAL ERROR: no return in method"
+	ERROR
+error_cast:
+	WSTR "FATAL ERROR: cannot cast"
+	ERROR
+error_null_deref:
+	WSTR "FATAL ERROR: null dereferencement"
+	ERROR
+error_invalid_entry:
+	WSTR "FATAL ERROR: entry invalid"
+	ERROR
+error_stack_overflow:
+	WSTR "FATAL ERROR: stack overflow"
+	ERROR
+; Methods for Object:
+init.Object:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; Methods for A:
+code.A.equals:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+	WSTR "TODO Object.equals"
+	WNL
+	RTS
+code.A.method:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	  (allocate R2)
+	NEW #1, R2
+	BOV error_stack_overflow
+	LEA 6(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.C
+	POP R2
+	STORE R2, 10(GB)
+; 	  (free R2)
+; 	Beginning of instructions:
+	ADDSP #1
+; 	  (allocate R2)
+	LOAD 10(GB), R2
+	STORE R2, 0(SP)
+; 	  (free R2)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ error_null_deref
+	LOAD 0(R2), R2
+	BSR 3(R2)
+	SUBSP #1
+	LOAD R0, R2
+	RTS
+init.A:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; Methods for C:
+code.C.methodeC:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+	RTS
+init.C:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; end main program

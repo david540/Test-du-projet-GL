@@ -1,0 +1,8 @@
+class Tropcool extends Cool {
+  protected int x = 3;
+  public String s;
+}
+
+{
+  println("Coucou");
+}

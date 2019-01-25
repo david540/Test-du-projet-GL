@@ -1,0 +1,18 @@
+// Description:
+//    Programme simple IfThenElse
+//
+// Resultats:
+//    Ligne 12: La condition n'est pas un booléen.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a;
+   if (2) {
+      a = 3;
+   }
+   else {
+      a = 2;
+   }
+}

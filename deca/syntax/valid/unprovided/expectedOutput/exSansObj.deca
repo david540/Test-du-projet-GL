@@ -1,0 +1,5 @@
+{
+  int x ;
+  (x=readInt()) ;
+  println((0x1.0p-1 * (x*x))) ;
+}

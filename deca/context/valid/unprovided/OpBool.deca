@@ -1,0 +1,14 @@
+// Description:
+//    Programme testant les opérations booléennes
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+  boolean a = true;
+  boolean b = false;
+
+  a = a && b;
+  a = a || true;
+}

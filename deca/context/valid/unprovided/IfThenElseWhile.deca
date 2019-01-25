@@ -1,0 +1,27 @@
+// Description:
+//    Programme simple IfThenElse et While
+//
+// Resultats:
+//    Le programme est valide.
+//
+// Historique:
+//    cree le 16/01/2019
+
+{
+   int a;
+   if (true) {
+      a = 3;
+   }
+   else {
+      a = 2;
+   }
+   if (false) {
+      a = 2;
+   }
+   else {
+      a = 3;
+   }
+   while (a>0) {
+      a = a - 1;
+   }
+}

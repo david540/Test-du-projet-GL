@@ -1,0 +1,18 @@
+// Description:
+//    Programme simple avec héritage et vérification d'un attribut protégé
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    protected int x;
+}
+
+class B extends A {
+    void setX(int x) {
+        this.x = x;
+    }
+}

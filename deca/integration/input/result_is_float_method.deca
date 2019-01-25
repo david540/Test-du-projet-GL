@@ -1,0 +1,10 @@
+class A {
+    float f = 5.5;
+    float getMoitie(){
+        return f/2;
+    }
+}
+{
+    A a = new A();
+    float d = a.getMoitie();
+}

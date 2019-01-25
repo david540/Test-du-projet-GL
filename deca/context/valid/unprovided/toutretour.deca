@@ -1,0 +1,18 @@
+class OtherObject{
+
+}
+
+class CustomObject{
+    void dire_coucou(){ }
+    int dire_coucou1(){ return 2; }
+    boolean dire_coucou2(){ return true; }
+    float dire_coucou3(){ return 1.5; }
+    Object dire_coucou4(){ return new Object(); }
+    OtherObject dire_coucou5(){ return new OtherObject(); }
+    void dire_coucou6(){ }
+    int dire_coucou7(){ return 2; }
+    boolean dire_coucou8(){ return true; }
+    float dire_coucou9(){ return 1.5; }
+    Object dire_coucou10(){ return new Object(); }
+    OtherObject dire_coucou11(){ return new OtherObject(); }
+}

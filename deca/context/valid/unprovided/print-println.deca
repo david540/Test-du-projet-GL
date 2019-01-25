@@ -1,0 +1,14 @@
+// Description:
+//    Programme testant println et print, avec tous les types possibles dont des variables.
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+        int x = 1;
+        float y = 0.5;
+        string chaine = "coucou";
+        println(1,2.5,"Hello, world!",x,y,chaine);
+        print(1,2.5,"Hello, world!",x,y,chaine);
+}

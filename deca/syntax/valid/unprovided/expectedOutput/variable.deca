@@ -1,0 +1,5 @@
+{
+    int x = 2;
+    float y = 0x1.666666p2;
+    println(x);
+}

@@ -1,0 +1,5 @@
+class Gello{
+    float coucou(){
+      return 1;
+    }
+}

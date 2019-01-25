@@ -1,0 +1,7 @@
+{
+        println(3);
+        println(3 * 4 %5);
+        println("YOUPI", 55);
+        printlnx(2.5);
+        printx(3.0);
+}

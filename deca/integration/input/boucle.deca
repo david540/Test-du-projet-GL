@@ -1,0 +1,10 @@
+{
+    int i = 10;
+    while(i > 0){
+        i = i - 1;
+    }
+    println(i);
+    while(i > 0){
+        println("probleme");
+    }
+}

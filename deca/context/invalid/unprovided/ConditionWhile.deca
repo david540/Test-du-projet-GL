@@ -1,0 +1,15 @@
+// Description:
+//    Programme simple While
+//
+// Resultats:
+//    Ligne 16: Condition du bloc while non booléenne.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a;
+   while (a) {
+      a = a + 1;
+   }
+}

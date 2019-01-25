@@ -1,0 +1,23 @@
+class A{
+
+}
+
+{
+    Object a = new Object(), b = new Object();
+    A s = new A();
+    Object o = a;
+    if(a == b){
+        println("Non");
+    }
+    else if(a == a) {
+        println("Oui");
+    }
+    if (o == a){
+        println("Oui");
+    }else if (s.equals(a)){
+        println("non");
+    }
+    if(a.equals(b)) {
+        println("ok");
+    }
+}

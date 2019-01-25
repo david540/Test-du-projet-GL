@@ -1,0 +1,3 @@
+class Obj{
+  string str(){return "ok";}
+}

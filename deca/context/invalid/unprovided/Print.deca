@@ -1,0 +1,15 @@
+// Description:
+//    Print
+//
+// Resultats:
+//    Ligne 14: Print d'un type non imprimable (ici un booléen).
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   boolean a = true;
+
+   // Doit etre refuse.
+   println(a);
+}

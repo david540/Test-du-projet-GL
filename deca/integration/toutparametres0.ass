@@ -1,0 +1,199 @@
+; start main program
+; Method Table for Object:
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Method Table for OtherObject:
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+; Method Table for CustomObject:
+	LEA 1(GB), R0
+	STORE R0, 4(GB)
+	LOAD code.CustomObject.dire_coucou1, R0
+	STORE R0, 5(GB)
+	LOAD code.CustomObject.dire_coucou2, R0
+	STORE R0, 6(GB)
+	LOAD code.CustomObject.dire_coucou3, R0
+	STORE R0, 7(GB)
+	LOAD code.CustomObject.dire_coucou4, R0
+	STORE R0, 8(GB)
+	LOAD code.CustomObject.dire_coucou500, R0
+	STORE R0, 9(GB)
+	LOAD code.CustomObject.dire_coucou5, R0
+	STORE R0, 10(GB)
+	LOAD code.CustomObject.dire_coucou6, R0
+	STORE R0, 11(GB)
+	LOAD code.CustomObject.dire_coucou13, R0
+	STORE R0, 12(GB)
+	LOAD code.CustomObject.dire_coucou14, R0
+	STORE R0, 13(GB)
+	LOAD code.CustomObject.dire_coucou15, R0
+	STORE R0, 14(GB)
+	LOAD code.CustomObject.dire_coucou16, R0
+	STORE R0, 15(GB)
+	LOAD code.CustomObject.dire_coucou501, R0
+	STORE R0, 16(GB)
+	LOAD code.CustomObject.dire_coucou17, R0
+	STORE R0, 17(GB)
+	LOAD code.CustomObject.dire_coucou18, R0
+	STORE R0, 18(GB)
+	LOAD code.CustomObject.dire_coucou25, R0
+	STORE R0, 19(GB)
+	LOAD code.CustomObject.dire_coucou26, R0
+	STORE R0, 20(GB)
+	LOAD code.CustomObject.dire_coucou27, R0
+	STORE R0, 21(GB)
+	LOAD code.CustomObject.dire_coucou28, R0
+	STORE R0, 22(GB)
+	LOAD code.CustomObject.dire_coucou502, R0
+	STORE R0, 23(GB)
+	LOAD code.CustomObject.dire_coucou29, R0
+	STORE R0, 24(GB)
+	LOAD code.CustomObject.dire_coucou30, R0
+	STORE R0, 25(GB)
+	LOAD code.CustomObject.dire_coucou37, R0
+	STORE R0, 26(GB)
+	LOAD code.CustomObject.dire_coucou38, R0
+	STORE R0, 27(GB)
+	LOAD code.CustomObject.dire_coucou39, R0
+	STORE R0, 28(GB)
+	LOAD code.CustomObject.dire_coucou40, R0
+	STORE R0, 29(GB)
+	LOAD code.CustomObject.dire_coucou503, R0
+	STORE R0, 30(GB)
+	LOAD code.CustomObject.dire_coucou41, R0
+	STORE R0, 31(GB)
+	LOAD code.CustomObject.dire_coucou42, R0
+	STORE R0, 32(GB)
+	LOAD code.CustomObject.dire_coucou49, R0
+	STORE R0, 33(GB)
+	LOAD code.CustomObject.dire_coucou50, R0
+	STORE R0, 34(GB)
+	LOAD code.CustomObject.dire_coucou51, R0
+	STORE R0, 35(GB)
+	LOAD code.CustomObject.dire_coucou52, R0
+	STORE R0, 36(GB)
+	LOAD code.CustomObject.dire_coucou504, R0
+	STORE R0, 37(GB)
+	LOAD code.CustomObject.dire_coucou53, R0
+	STORE R0, 38(GB)
+	LOAD code.CustomObject.dire_coucou54, R0
+	STORE R0, 39(GB)
+; Main program
+	HALT
+; Error handling:
+error_div_by_0:
+	WSTR "FATAL ERROR: division by 0"
+	ERROR
+error_arithmetic_overflow:
+	WSTR "FATAL ERROR: arithmetic overflow or division by 0.0"
+	ERROR
+error_no_return:
+	WSTR "FATAL ERROR: no return in method"
+	ERROR
+error_cast:
+	WSTR "FATAL ERROR: cannot cast"
+	ERROR
+error_null_deref:
+	WSTR "FATAL ERROR: null dereferencement"
+	ERROR
+error_invalid_entry:
+	WSTR "FATAL ERROR: entry invalid"
+	ERROR
+error_stack_overflow:
+	WSTR "FATAL ERROR: stack overflow"
+	ERROR
+; Methods for Object:
+code.Object.equals:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+	WSTR "TODO Object.equals"
+	WNL
+	RTS
+init.Object:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; Methods for C:
+code.C.setXY:
+	PUSH R2
+	PUSH R3
+	PUSH R3
+	PUSH R4
+	PUSH R5
+	PUSH R5
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+; 	  (allocate R2)
+	LOAD -2(LB), R2
+; 	  (allocate R3)
+	LOAD #3, R3
+; 	  (free R3)
+	STORE R3, 1(R2)
+; 	  (allocate R3)
+	LOAD -2(LB), R3
+; 	  (allocate R4)
+	LOAD -2(LB), R4
+; 	  (allocate R5)
+	LOAD 1(R4), R5
+; 	  (free R5)
+	STORE R5, 2(R3)
+; 	  (allocate R5)
+	LOAD -2(LB), R5
+	LOAD 1(R5), R0
+	POP R5
+	POP R5
+	POP R4
+	POP R3
+	POP R3
+	POP R2
+; 	  (free R2)
+; 	  (free R3)
+; 	  (free R4)
+; 	  (free R5)
+	RTS
+code.C.configuration:
+	PUSH R2
+	PUSH R3
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+; 	  (allocate R2)
+	LOAD -2(LB), R2
+	ADDSP #1
+	STORE R2, 0(SP)
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ error_null_deref
+	LOAD 0(R2), R2
+	BSR 2(R2)
+	SUBSP #1
+	LOAD R0, R2
+; 	  (allocate R3)
+	LOAD -2(LB), R3
+	ADDSP #1
+	STORE R3, 0(SP)
+	LOAD 0(SP), R3
+	CMP #null, R3
+	BEQ error_null_deref
+	LOAD 0(R3), R3
+	BSR 2(R3)
+	SUBSP #1
+	LOAD R0, R3
+; 	  (free R3)
+	ADD R3, R2
+; 	  (free R2)
+	LOAD R2, R0
+	POP R3
+	POP R2
+	RTS
+init.C:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	STORE R0, 1(R1)
+	STORE R0, 2(R1)
+	RTS
+; end main program

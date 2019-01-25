@@ -1,0 +1,10 @@
+
+class A{
+    void method(){
+        C c = new C();
+        c.methodeC();
+    }
+}
+class C extends A{
+    void methodeC(){}
+}

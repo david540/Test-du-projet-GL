@@ -1,0 +1,5 @@
+{
+    println(readInt());
+    println(readFloat());
+    printlnx(readFloat());
+}

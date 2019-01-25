@@ -1,0 +1,8 @@
+class Tropcool {
+  int double(int x) {
+    return (x*2);
+  }
+}
+{
+  println(68);
+}

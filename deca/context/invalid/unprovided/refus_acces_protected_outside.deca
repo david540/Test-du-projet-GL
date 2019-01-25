@@ -1,0 +1,7 @@
+class C{
+    protected int var = 3;
+}
+{
+    C c = new C();
+    println(c.var);
+}

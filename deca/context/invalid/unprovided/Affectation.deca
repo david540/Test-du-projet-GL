@@ -1,0 +1,13 @@
+// Description:
+//    attribuer à une variable une valeur d'un type différent
+//
+// Resultats:
+//    Ligne 12 : Message d'erreur car type incompatible.
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   int x;
+   x = 2.5;
+}

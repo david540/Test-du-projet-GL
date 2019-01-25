@@ -1,0 +1,9 @@
+class A{
+
+}
+
+class B{
+    void function(int a, b, c){
+
+    }
+}

@@ -1,0 +1,5 @@
+{
+        println(42);
+        println(((3 * 2) +(4 % 2)));
+        println(0x1.4p1);
+}

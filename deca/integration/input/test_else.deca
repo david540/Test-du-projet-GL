@@ -1,0 +1,12 @@
+{
+  if((!false || false ||false || true || false) && false){
+      println("non");
+  }else{
+      println("ok");
+  }
+  if(true && true || true){
+      println("ok");
+  }else if(true){
+      println("non");
+  }
+}

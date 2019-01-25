@@ -1,0 +1,13 @@
+// Description:
+//    Utiliser this dans le main
+//
+// Resultats:
+//    Ligne 12 : Message d'erreur car this ne s'utilise qu'au sein d'une classe
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+    int x;
+    this.x = 2;
+}

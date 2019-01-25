@@ -1,0 +1,44 @@
+class A{
+
+}
+class B{
+    void coucou(){
+
+    }
+}
+class C{
+    int var;
+}
+class D{
+    int var;
+    void coucou(){}
+}
+
+class E{
+    D getD(){ return null; }
+}
+class F extends E{
+    int a;
+}
+
+{
+  A a = new A();
+  B b = new B();
+  C c = new C();
+  D d = new D();
+  A aa = null;
+  B bb = null;
+  C cc = null;
+  D dd = null;
+  E e1 = new E();
+  E e2 = null;
+  E e = new F();
+  Object o = new D();
+  e1 = new F();
+  e2 = new F();
+  aa = new A();
+  bb = new B();
+  cc = new C();
+  dd = new D();
+  a = new A();
+}

@@ -1,0 +1,16 @@
+class CustomObject{
+
+}
+
+class Test{
+    protected int i;
+    protected boolean b;
+    protected float f;
+    protected Object o;
+    protected CustomObject c;
+    int ii;
+    boolean bb;
+    float ff;
+    Object oo;
+    CustomObject cc;
+}

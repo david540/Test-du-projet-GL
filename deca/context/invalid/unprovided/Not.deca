@@ -1,0 +1,13 @@
+// Description:
+//    Utiliser not avec un non-booléen
+//
+// Resultats:
+//    Ligne 12 : Message d'erreur car variable non booléenne
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+    int x;
+    x = !x;
+}

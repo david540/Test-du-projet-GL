@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant la boucle While ainsi que le IfThenElse
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+        int x = 1;
+        int y = 1;
+
+        while(x<=2){
+          if(y==1){
+            x = y + x;
+          }
+          else{
+            x = 10;
+          }
+        }
+}

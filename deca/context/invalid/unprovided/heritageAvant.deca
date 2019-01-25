@@ -1,0 +1,16 @@
+// Description:
+//    Programme simple avec héritage
+//
+// Resultats:
+//    Programme incorrect ligne 10 : la classe A n'est pas dans l'environnement des types
+//
+// Historique:
+//    cree le 21/01/2019
+
+class B extends A {
+
+}
+
+class A {
+
+}

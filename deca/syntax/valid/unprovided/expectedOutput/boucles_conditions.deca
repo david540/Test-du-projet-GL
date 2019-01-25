@@ -1,0 +1,18 @@
+{
+    int x;
+    while(true) {
+        if((6 > 3)) {
+          print("6 est plus grand que 3");
+        } else {
+          if(((6 % 3) == 2)) {
+            print("Elle est gentille");
+          } else {
+            if((3 == 4)) {
+              println("pas de declarations dans les instructions");
+            } else {
+              (x = null);
+            }
+          }
+        }
+    }
+}

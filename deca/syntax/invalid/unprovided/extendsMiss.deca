@@ -1,0 +1,17 @@
+// Description:
+//    class sans identificateur après extends
+//
+// Resultats:
+//    Ligne 11 : Erreur de syntaxe.
+//    test_lex ne doit pas donner d'erreur.
+//
+// Historique:
+//    cree le 18/01/2019
+
+class maClasse extends {
+    protected String s;
+}
+
+{
+
+}

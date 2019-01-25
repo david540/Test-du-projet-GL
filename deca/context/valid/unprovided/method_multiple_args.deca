@@ -1,0 +1,9 @@
+class A{
+    int a, b;
+}
+
+class B{
+    void function(int a, float b, boolean c, Object o, A d){
+        int a2, b2;
+    }
+}

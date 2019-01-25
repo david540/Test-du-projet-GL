@@ -1,0 +1,10 @@
+class B{
+    void functionAvecTroisArguments(int a, float b, boolean c){ }
+}
+class A extends B{
+    void function(){this.functionAvecTroisArguments(1, 1, 1==1);}
+}
+{
+    A a = new A();
+    a.functionAvecTroisArguments(1, 1, 1==1);
+}

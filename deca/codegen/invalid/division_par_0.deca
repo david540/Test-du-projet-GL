@@ -1,0 +1,5 @@
+{
+  float f = 5.56;
+  int i = 0;
+  println(f/i);
+}

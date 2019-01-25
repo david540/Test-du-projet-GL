@@ -1,0 +1,19 @@
+class OtherObject{}
+
+class CustomObject{
+    int a2 (int a){return 1;}
+    float b2(float b) {return 1;}
+    boolean c2(boolean c){ return true;}
+    Object d2(Object d){ return new Object(); }
+    OtherObject e2(OtherObject o) { return new OtherObject(); }
+    void f2(){}
+}
+
+class SonObject extends CustomObject{
+    int a2 (){return 2;}
+    float b2() {return 2;}
+    boolean c2(){ return false;}
+    Object d2(){ return new Object(); }
+    OtherObject e2() { return new OtherObject(); }
+    void f2(){}
+}

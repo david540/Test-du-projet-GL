@@ -1,0 +1,14 @@
+// Description:
+//    Programme testant l'addition entre un int et un float
+//
+// Resultats:
+//    Le programme est valide
+//
+// Historique:
+//    cree le 16/01/2019
+
+{
+   int a = 2;
+   float b = 2.5;
+   b = a + b;
+}

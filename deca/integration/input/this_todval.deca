@@ -1,0 +1,16 @@
+class C{
+    int x, y;
+    int setXY(){
+        this.x = 3;
+        this.y = this.x;
+        return this.x;
+    }
+    int configuration(){
+        return this.setXY() + this.setXY();
+    }
+}
+
+{
+    C c = new C();
+    int x = c.configuration();
+}

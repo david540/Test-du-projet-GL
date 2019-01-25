@@ -1,0 +1,107 @@
+	ADDSP #4
+; start main program
+; Method Table for Object:
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Main program
+; 	Variables declaration:
+; 	  (allocate R2)
+	LOAD #24, R2
+; 	  (free R2)
+	STORE R2, 4(GB)
+; 	Beginning of main instructions:
+	WSTR "--------- JEU DU PLUS OU MOINS -----------"
+	WNL
+	WSTR "Tapez un chiffre entre 0 et 100 : "
+	RINT
+	BOV error_invalid_entry
+; 	  (allocate R2)
+	LOAD R1, R2
+; 	  (free R2)
+	STORE R2, 3(GB)
+while_0_begin:
+; 	  (allocate R2)
+	LOAD 3(GB), R2
+	SUB 4(GB), R2
+	BNE comp_notequals_1
+	LOAD #0, R2
+	BRA comp_notequals_1_end
+comp_notequals_1:
+	LOAD #1, R2
+comp_notequals_1_end:
+	BEQ while_0_end
+; 	  (free R2)
+; 	  (allocate R2)
+	LOAD 3(GB), R2
+	SUB 4(GB), R2
+	BLT comp_lower_3
+	LOAD #0, R2
+	BRA comp_lower_3_end
+comp_lower_3:
+	LOAD #1, R2
+comp_lower_3_end:
+	BEQ test_2_else
+; 	  (free R2)
+	WSTR "C'est plus !"
+	WNL
+	WSTR "Nouvelle tentative : "
+	RINT
+	BOV error_invalid_entry
+; 	  (allocate R2)
+	LOAD R1, R2
+; 	  (free R2)
+	STORE R2, 3(GB)
+	BRA test_2_end
+test_2_else:
+	WSTR "C'est moins !"
+	WNL
+	WSTR "Nouvelle tentative : "
+	RINT
+	BOV error_invalid_entry
+; 	  (allocate R2)
+	LOAD R1, R2
+; 	  (free R2)
+	STORE R2, 3(GB)
+test_2_end:
+	BRA while_0_begin
+while_0_end:
+	WSTR "Félicitations ! C'est gagné !"
+	WNL
+	HALT
+; Error handling:
+error_div_by_0:
+	WSTR "FATAL ERROR: division by 0"
+	ERROR
+error_arithmetic_overflow:
+	WSTR "FATAL ERROR: arithmetic overflow or division by 0.0"
+	ERROR
+error_no_return:
+	WSTR "FATAL ERROR: no return in method"
+	ERROR
+error_cast:
+	WSTR "FATAL ERROR: cannot cast"
+	ERROR
+error_null_deref:
+	WSTR "FATAL ERROR: null dereferencement"
+	ERROR
+error_invalid_entry:
+	WSTR "FATAL ERROR: entry invalid"
+	ERROR
+error_stack_overflow:
+	WSTR "FATAL ERROR: stack overflow"
+	ERROR
+; Methods for Object:
+code.Object.equals:
+; 	Parameters declaration:
+; 	Variables declaration:
+; 	Beginning of instructions:
+	WSTR "TODO Object.equals"
+	WNL
+	RTS
+init.Object:
+	LOAD #0, R0
+	LOAD -2(LB), R1
+	RTS
+; end main program

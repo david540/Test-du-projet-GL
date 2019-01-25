@@ -1,0 +1,16 @@
+// Description:
+//    Modulo
+//
+// Resultats:
+//    Ligne 15: Modulo impossible entre un int et un float.
+//
+// Historique:
+//    cree le 15/01/2019
+
+{
+   int a = 2;
+   float b = 2.5;
+
+   // Doit etre refuse.
+   a = a%b;
+}

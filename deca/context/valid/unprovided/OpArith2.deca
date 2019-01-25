@@ -1,0 +1,14 @@
+// Description:
+//    Opération arithmétique entre un int et un float
+//
+// Resultats:
+//    Le programme est correct
+//
+// Historique:
+//    cree le 17/01/2019
+
+{
+   int a = 1;
+   float b = 1.5;
+   b = a + b;
+}

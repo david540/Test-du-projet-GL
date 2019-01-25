@@ -1,0 +1,24 @@
+class Tropcool extends Cool {
+  protected int x = 3, y;
+  String s = "Terence est gentil";
+
+  int carreX() {
+    return (x*x);
+  }
+
+  String coucouChaine(String s) {
+    String res = "Coucou" + s;
+    return res;
+  }
+}
+
+class PasTresCool {
+
+}
+{
+  int somme;
+  TropCool terence = new TropCool();
+  somme = (3 + 5) % 2;
+  println(terence.coucouChaine(terence.s));
+  println("Coucou");
+}

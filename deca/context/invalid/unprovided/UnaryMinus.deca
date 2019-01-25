@@ -1,0 +1,13 @@
+// Description:
+//    Utiliser le - unaire sur une variable ni int ni float
+//
+// Resultats:
+//    Ligne 12 : Message d'erreur car type incompatible.
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   boolean x = true;
+   x = -x;
+}

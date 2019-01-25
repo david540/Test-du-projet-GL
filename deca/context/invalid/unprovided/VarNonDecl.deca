@@ -1,0 +1,14 @@
+// Description:
+//    Déclaration de variable
+//
+// Resultats:
+//    Ligne 12: utilisation d'une variable non déclarée
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+
+   // Doit etre refuse.
+  x = 1;
+}

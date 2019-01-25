@@ -1,0 +1,9 @@
+{
+    int x ;
+    float y ;
+    boolean b ;
+    (x = 3);
+    (y = 0x1.666666p2);
+    (b = false);
+    println(x, y);
+}

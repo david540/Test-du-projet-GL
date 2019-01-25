@@ -1,0 +1,19 @@
+{
+  int x;
+  int result = 24;
+  println("--------- JEU DU PLUS OU MOINS -----------");
+  print("Tapez un chiffre entre 0 et 100 : ");
+  x = readInt();
+  while(x != result) {
+    if(x < result) {
+      println("C'est plus !");
+      print("Nouvelle tentative : ");
+      x = readInt();
+    } else {
+      println("C'est moins !");
+      print("Nouvelle tentative : ");
+      x = readInt();
+    }
+  }
+  println("Félicitations ! C'est gagné !");
+}

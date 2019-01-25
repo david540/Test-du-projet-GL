@@ -1,0 +1,14 @@
+// Description:
+//    Opération arithmétique entre un int et un boolean
+//
+// Resultats:
+//    Ligne 13: Opération impossible entre un int et un boolean
+//
+// Historique:
+//    cree le 17/01/2019
+
+{
+   int a = 1;
+   boolean b = true;
+   a = a + b;
+}

@@ -1,0 +1,12 @@
+// Description:
+//    filename avec caractères spéciaux
+//
+// Resultats:
+//  test_lex ne doit pas reconnaitre le filename.
+//
+// Historique:
+//    cree le 18/01/2019
+{
+  #include "o$tata.deca";
+  println("Yo");
+}

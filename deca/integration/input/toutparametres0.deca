@@ -1,0 +1,45 @@
+class OtherObject{
+
+}
+
+class CustomObject{
+    void dire_coucou1(int coucou){ }
+    int dire_coucou2(int coucou){ return 2; }
+    boolean dire_coucou3(int coucou){ return true; }
+    float dire_coucou4(int coucou){ return 1.5; }
+    string dire_coucou500(int coucou){ return "ok"; }
+    Object dire_coucou5(int coucou){ return new Object(); }
+    OtherObject dire_coucou6(int coucou){ return new OtherObject(); }
+
+    void dire_coucou13(boolean coucou){ }
+    int dire_coucou14(boolean coucou){ return 2; }
+    boolean dire_coucou15(boolean coucou){ return true; }
+    float dire_coucou16(boolean coucou){ return 1.5; }
+    string dire_coucou501(int coucou){ return "ok"; }
+    Object dire_coucou17(boolean coucou){ return new Object(); }
+    OtherObject dire_coucou18(boolean coucou){ return new OtherObject(); }
+
+    void dire_coucou25(float coucou){ }
+    int dire_coucou26(float coucou){ return 2; }
+    boolean dire_coucou27(float coucou){ return true; }
+    float dire_coucou28(float coucou){ return 1.5; }
+    string dire_coucou502(int coucou){ return "ok"; }
+    Object dire_coucou29(float coucou){ return new Object(); }
+    OtherObject dire_coucou30(float coucou){ return new OtherObject(); }
+
+    void dire_coucou37(OtherObject coucou){ }
+    int dire_coucou38(OtherObject coucou){ return 2; }
+    boolean dire_coucou39(OtherObject coucou){ return true; }
+    float dire_coucou40(OtherObject coucou){ return 1.5; }
+    string dire_coucou503(int coucou){ return "ok"; }
+    Object dire_coucou41(OtherObject coucou){ return new Object(); }
+    OtherObject dire_coucou42(OtherObject coucou){ return new OtherObject(); }
+
+    void dire_coucou49(Object coucou){ }
+    int dire_coucou50(Object coucou){ return 2; }
+    boolean dire_coucou51(Object coucou){ return true; }
+    float dire_coucou52(Object coucou){ return 1.5; }
+    string dire_coucou504(int coucou){ return "ok"; }
+    Object dire_coucou53(Object coucou){ return new Object(); }
+    OtherObject dire_coucou54(Object coucou){ return new OtherObject(); }
+}

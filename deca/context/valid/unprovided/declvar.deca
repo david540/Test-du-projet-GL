@@ -1,0 +1,26 @@
+// Description:
+//    Programme testant la déclaration de tous les types de variables et leur utilisation afin de s'assurer que la déclaration est conservée.
+//    La déclaration se fait avec et sans initialisation.
+//
+// Resultats:
+//    Arbre décoré correct
+
+
+{
+        int x;
+        int y = 1;
+
+        float a;
+        float b = 2;
+
+        boolean vrai;
+        boolean faux = false;
+
+        string chaine;
+        string chaine2 = "coucou";
+
+        x = y;
+        a = b;
+        vrai = faux;
+        chaine = chaine2;
+}

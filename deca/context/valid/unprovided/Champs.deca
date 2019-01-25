@@ -1,0 +1,13 @@
+// Description:
+//    Programme simple avec différentes visibilités des champs
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    int x;
+    protected int y;
+}

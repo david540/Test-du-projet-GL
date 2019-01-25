@@ -1,0 +1,14 @@
+// Description:
+//    Programme simple avec classe non définie dans la signature d'une méthode
+//
+// Resultats:
+//    Programme incorrect ligne 11 : classe B non définie
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    void m (B b) {
+        println("faux");
+    }
+}

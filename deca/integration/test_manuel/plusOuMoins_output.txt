@@ -1,0 +1,6 @@
+--------- JEU DU PLUS OU MOINS -----------
+Tapez un chiffre entre 0 et 100 : C'est moins !
+Nouvelle tentative : C'est moins !
+Nouvelle tentative : C'est plus !
+Nouvelle tentative : C'est plus !
+Nouvelle tentative : Félicitations ! C'est gagné !

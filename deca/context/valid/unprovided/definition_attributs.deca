@@ -1,0 +1,10 @@
+class Test{
+    protected int i;
+    protected boolean b;
+    protected float f;
+    protected Object o;
+    int ii;
+    boolean bb;
+    float ff;
+    Object oo; 
+}

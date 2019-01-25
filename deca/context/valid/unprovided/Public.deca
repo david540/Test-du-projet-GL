@@ -1,0 +1,19 @@
+// Description:
+//    Programme simple avec vérification d'un attribut public
+//
+// Resultats:
+//    Programme correct
+//
+// Historique:
+//    cree le 21/01/2019
+
+class A {
+    int x;
+}
+
+class MAIN {
+    void m() {
+        A a = new A();
+        a.x = 3;
+    }
+}

@@ -1,0 +1,12 @@
+// Description:
+//    déclarer une variable avec un type inexistant
+//
+// Resultats:
+//    Ligne 11 : Message d'erreur car type inexistant.
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   voiture v;
+}

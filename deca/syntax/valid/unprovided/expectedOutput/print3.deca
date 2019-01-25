@@ -1,0 +1,7 @@
+{
+        println(3);
+        println(((3 * 4) %5));
+        println("YOUPI", 55);
+        printlnx(0x1.4p1);
+        printx(0x1.8p1);
+}

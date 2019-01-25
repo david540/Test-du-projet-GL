@@ -1,0 +1,50 @@
+; start main program
+; Main program
+; Variables declaration:
+; Beginning of main instructions:
+	LOAD #3, R1
+	WINT
+	WNL
+; allocate R2
+	LOAD #3, R2
+	MUL #4, R2
+	REM #5, R2
+	BOV error_div_by_0
+	LOAD R2, R1
+; free R2
+	WINT
+	WNL
+	WSTR "YOUPI"
+	LOAD #55, R1
+	WINT
+	WNL
+	LOAD #0x1.4p1, R1
+	WFLOAT
+	WNL
+	LOAD #0x1.8p1, R1
+	WFLOAT
+; End of main instructions
+	HALT
+; Error handling:
+error_div_by_0:
+	WSTR "FATAL ERROR: division by 0"
+	ERROR
+error_arithmetic_overflow:
+	WSTR "FATAL ERROR: arithmetic overflow or division by 0.0"
+	ERROR
+error_no_return:
+	WSTR "FATAL ERROR: no return in method"
+	ERROR
+error_cast:
+	WSTR "FATAL ERROR: cannot cast"
+	ERROR
+error_null_deref:
+	WSTR "FATAL ERROR: null dereferencement"
+	ERROR
+error_invalid_entry:
+	WSTR "FATAL ERROR: entry invalid"
+	ERROR
+error_stack_overflow:
+	WSTR "FATAL ERROR: stack overflow"
+	ERROR
+; end main program

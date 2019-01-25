@@ -1,0 +1,12 @@
+// Description:
+//    déclarer deux variables de meme nom
+//
+// Resultats:
+//    Ligne 12 : Message d'erreur car déclaration multiple.
+//
+// Historique:
+//    cree le 19/01/2019
+
+{
+   int x = 2.0;
+}
